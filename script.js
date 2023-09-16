@@ -1,7 +1,6 @@
 // script.js
 
-let isPizzaHasBase = false;
-const pizzaBase = document.getElementById("pizza-base");
+const pizzaBase = document.getElementById("pizza");
 const baseContainer = document.querySelector(".base-container");
 const ingredientsContainer = document.querySelector(".ingredients-container");
 
@@ -13,7 +12,7 @@ function updateCrustVisual(crustStyle) {
 
 // Load available pizza bases and ingredients dynamically
 const pizzaBases = ["Thin Crust", "Thick Crust"];
-const toppingTypes = ["Cheese", "Pepperoni", "Mushrooms"];
+const toppingTypes = ["Onions", "Pepperonis", "Olives", 'Basil'];
 
 const container = document.getElementById('base-container');
 
@@ -74,13 +73,26 @@ function handleDrop(event) {
     console.log(ingredientName);
 
     if(ingredientName === "Thin Crust") {
-        updateCrustVisual("pizza-thin-crust");
+       
         baseContainer.style.display = 'none';
         ingredientsContainer.style.display = 'block';   
         
     } else if (ingredientName === "Thick Crust") {
+        updateCrustVisual("pizza-thick-crust");
         baseContainer.style.display = 'none';
         ingredientsContainer.style.display = 'block';   
     }
-    isPizzaHasBase = true;
+    else if(ingredientName === "Onions") {
+       document.getElementById("onions").className = "onions";
+    }
+    else if(ingredientName === "Olives") {
+        document.getElementById("olives").className = "olives";
+    }
+    else if(ingredientName === "Pepperonis") {
+        document.getElementById("pepperonis").className = "pepperonis";
+    }
+    else if(ingredientName === "Basil") {
+        document.getElementById("basil").className = "basil";
+    }
+    
 }
