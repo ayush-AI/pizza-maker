@@ -21,29 +21,27 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: white; /* Example gradient for crust */
-    border: 3px solid #d7a95c; /* Example border for crust */
+    background: white; 
+    border: 3px solid #d7a95c; 
     border-radius: 50%;
     box-sizing: border-box;
 }
 
 .pizza-thin-crust {
-    /* Styles for the crust visuals */
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #d7a95c, #e2c986); /* Example gradient for crust */
-    border: 3px solid #d7a95c; /* Example border for crust */
+    background: linear-gradient(90deg, #d7a95c, #e2c986); 
+    border: 3px solid #d7a95c;
     border-radius: 50%;
     box-sizing: border-box;
 }
 .pizza-thick-crust {
-    /* Styles for the crust visuals */
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #b6623b, #f1ac71); /* Example gradient for crust */
-    border: 3px solid #d7a95c; /* Example border for crust */
+    background: linear-gradient(90deg, #b6623b, #f1ac71); 
+    border: 3px solid #d7a95c; 
     border-radius: 50%;
     box-sizing: border-box;
 }
