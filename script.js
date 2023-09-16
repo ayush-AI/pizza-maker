@@ -26,19 +26,6 @@ pizzaBases.forEach(base => {
     baseElement.addEventListener("dragstart", dragStart);
     baseContainer.appendChild(baseElement);
 
-    // Add a click event to change the crust visuals
-    baseElement.addEventListener("click", () => {
-        // Define the crust style based on the selected base
-        let crustStyle = "";
-
-        if (base === "Thin Crust") {
-            crustStyle = "background: linear-gradient(90deg, #d7a95c, #e2c986); border: 3px solid #d7a95c;";
-        } else if (base === "Thick Crust") {
-            crustStyle = "background: linear-gradient(90deg, #996649, #d7a95c); border: 3px solid #996649;";
-        }
-
-        updateCrustVisual(crustStyle);
-    });
 });
 
 // Add topping ingredients to the ingredients section
