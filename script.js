@@ -1,5 +1,3 @@
-// script.js
-
 const pizzaBase = document.getElementById("pizza");
 const baseContainer = document.querySelector(".base-container");
 const ingredientsContainer = document.querySelector(".ingredients-container");
@@ -57,10 +55,9 @@ function allowDrop(event) {
 function handleDrop(event) {
     event.preventDefault();
     const ingredientName = event.dataTransfer.getData("text/plain");
-    console.log(ingredientName);
 
     if(ingredientName === "Thin Crust") {
-       
+        updateCrustVisual("pizza-thin-crust");
         baseContainer.style.display = 'none';
         ingredientsContainer.style.display = 'block';   
         
