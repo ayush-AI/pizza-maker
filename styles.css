@@ -1,0 +1,52 @@
+/* styles.css */
+.pizza-container {
+    width: 300px;
+    height: 300px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.empty-circle {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+}
+
+.pizza-crust {
+    /* Styles for the crust visuals */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white; /* Example gradient for crust */
+    border: 3px solid #d7a95c; /* Example border for crust */
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.pizza-thin-crust {
+    /* Styles for the crust visuals */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #d7a95c, #e2c986); /* Example gradient for crust */
+    border: 3px solid #d7a95c; /* Example border for crust */
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.pizza-thick-crust {
+    /* Styles for the crust visuals */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #b6623b, #f1ac71); /* Example gradient for crust */
+    border: 3px solid #d7a95c; /* Example border for crust */
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.ingredients {
+    /* Style ingredient list here */
+}
