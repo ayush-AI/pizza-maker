@@ -1,96 +1,165 @@
-.pizza-container {
-    width: 300px;
-    height: 300px;
-    background-color: #f5f5f5;
-    border-radius: 50%;
-    margin: 20px auto;
-    position: relative;
+* {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: all ease-in-out 0.5s;
 }
 
-.pizza{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background-color: #ffeb3b;
-    border-radius: 50%;
-    border: 4px solid #ffa500;
-    box-shadow: 0 0 0px 10px #dd8126;
+.pizza-container {
+  width: 300px;
+  height: 300px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  margin: 20px auto;
+  position: relative;
+  transition: all ease-in-out 0.5s;
+}
+
+.pizza {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #ffeb3b;
+  border-radius: 50%;
+  border: 4px solid #ffa500;
+  box-shadow: 0 0 0px 10px #dd8126;
 }
 
 .pizza-crust {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: white; 
-    border: 3px solid #d7a95c; 
-    border-radius: 50%;
-    box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white; 
+  border: 3px solid #d7a95c; 
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .pizza-thin-crust {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #d7a95c, #e2c986); 
-    border: 3px solid #d7a95c;
-    border-radius: 50%;
-    box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #d7a95c,
+    #e2c986
+  ); 
+  border: 3px solid #d7a95c; 
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 .pizza-thick-crust {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #b6623b, #f1ac71); 
-    border: 3px solid #d7a95c; 
-    border-radius: 50%;
-    box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #b6623b,
+    #f1ac71
+  ); 
+  border: 3px solid #d7a95c; 
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .pizza .basil {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  .pizza .basil .leaf {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: #4caf50;
-    z-index: 13;
-    border-radius: 100px 0;
-    box-shadow: 50px 100px #4caf50, 150px 120px #4caf50, 130px 40px #4caf50, 200px 250px #4caf50, 250px 300px #4caf50, 300px 100px #4caf50, 350px 200px #4caf50, 35px 280px #4caf50, 150px 320px #4caf50, 130px 40px #4caf50, 100px 200px #4caf50, 250px 60px #4caf50, 230px 160px #4caf50;
-  }
-  .pizza .onions {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 12;
-    background-image: radial-gradient(circle at 10px 0px, transparent 6px, #d2d2d2 5px, #f5f5f5 11px, transparent 13px), radial-gradient(circle at 0px 10px, transparent 6px, #d2d2d2 5px, #f5f5f5 11px, transparent 13px);
-    background-size: 80px 90px, 150px 150px;
-  }
-  .pizza .olives {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 11;
-    transform: rotate(25deg);
-    background-image: radial-gradient(circle at 70px 70px, #455a64 3px, #374850 9px, transparent 10px);
-    background-size: 100px 100px;
-  }
-  .pizza .pepperonis {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    transform: rotate(15deg);
-    z-index: 10;
-    background-image: radial-gradient(circle at 40px 40px, #ea5353 14px, #e21c1c 16px, transparent 18px);
-    background-size: 80px 80px;
-  }
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pizza .basil .leaf {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #4caf50;
+  z-index: 13;
+  border-radius: 100px 0;
+  box-shadow: 50px 100px #4caf50, 150px 120px #4caf50, 130px 40px #4caf50,
+    200px 250px #4caf50, 250px 300px #4caf50, 300px 100px #4caf50,
+    350px 200px #4caf50, 35px 280px #4caf50, 150px 320px #4caf50,
+    130px 40px #4caf50, 100px 200px #4caf50, 250px 60px #4caf50,
+    230px 160px #4caf50;
+}
+.pizza .onions {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 12;
+  background-image: radial-gradient(
+      circle at 10px 0px,
+      transparent 6px,
+      #d2d2d2 5px,
+      #f5f5f5 11px,
+      transparent 13px
+    ),
+    radial-gradient(
+      circle at 0px 10px,
+      transparent 6px,
+      #d2d2d2 5px,
+      #f5f5f5 11px,
+      transparent 13px
+    );
+  background-size: 80px 90px, 150px 150px;
+}
+.pizza .olives {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 11;
+  transform: rotate(25deg);
+  background-image: radial-gradient(
+    circle at 70px 70px,
+    #455a64 3px,
+    #374850 9px,
+    transparent 10px
+  );
+  background-size: 100px 100px;
+}
+.pizza .pepperonis {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: rotate(15deg);
+  z-index: 10;
+  background-image: radial-gradient(
+    circle at 40px 40px,
+    #ea5353 14px,
+    #e21c1c 16px,
+    transparent 18px
+  );
+  background-size: 80px 80px;
+}
+
+.base-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmax;
+}
+
+.ingredients{
+  padding: 5vmax;
+  border-radius: 50%;
+}
+
+.ingredients-container{
+  justify-content: center;
+  align-items: center;
+  gap: 1vmax;
+}
+.ingredients-container img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.item p{
+  margin: 0;
+}
